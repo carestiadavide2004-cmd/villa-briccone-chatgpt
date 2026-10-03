@@ -1,0 +1,606 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Villa Briccone · Ristorante · Ricevimenti · Eventi — Manoppello, Abruzzo</title>
+  <meta name="description" content="Villa Briccone, ristorante e location per ricevimenti ed eventi a Manoppello, in Abruzzo. Per prenotazioni e informazioni, contattaci direttamente.">
+  <meta name="theme-color" content="#f5efe3">
+
+  <meta property="og:title" content="Villa Briccone · Ristorante · Ricevimenti · Eventi">
+  <meta property="og:description" content="Una villa italiana a Manoppello, Abruzzo. Ristorante, matrimoni, cerimonie ed eventi.">
+  <meta property="og:image" content="assets/images/portico-sera.jpg">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" type="image/png" href="assets/brand/logo-mark-taupe.png">
+
+  <!-- Typography: Cormorant Garamond (display) + Jost (body/UI) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="preload" as="image" href="assets/images/portico-sera.jpg" imagesrcset="assets/images/portico-sera-960.jpg 960w, assets/images/portico-sera.jpg 1920w" imagesizes="100vw">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Marks JS as available before first paint, so reveal animations never flash -->
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Vai al contenuto</a>
+
+  <!-- Opening curtain (only shown with JS; removed after load) -->
+  <div class="curtain" aria-hidden="true">
+    <img class="curtain__mark" src="assets/brand/logo-mark-taupe.png" width="211" height="199" alt="">
+  </div>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="nav__brand" href="#top" aria-label="Villa Briccone — torna all'inizio">
+        <span class="nav__mark" aria-hidden="true">
+          <img class="nav__mark-light" src="assets/brand/logo-mark-white.png" width="211" height="199" alt="">
+          <img class="nav__mark-dark" src="assets/brand/logo-mark-taupe.png" width="211" height="199" alt="">
+        </span>
+        <span class="nav__name">Villa Briccone</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Navigazione principale">
+        <a href="#villa">La Villa</a>
+        <a href="#ristorante">Ristorante</a>
+        <a href="#eventi">Matrimoni &amp; Eventi</a>
+        <a href="#galleria">Galleria</a>
+        <a href="#contatti">Contatti</a>
+      </nav>
+
+      <a class="nav__call" href="tel:" data-phone-link>
+        <span class="nav__call-label">Chiama</span>
+      </a>
+
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Apri il menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="menu" id="menu" aria-hidden="true">
+    <div class="menu__inner">
+      <nav class="menu__links" aria-label="Menu">
+        <a href="#villa"><span class="menu__num">01</span>La Villa</a>
+        <a href="#ristorante"><span class="menu__num">02</span>Ristorante</a>
+        <a href="#eventi"><span class="menu__num">03</span>Matrimoni &amp; Eventi</a>
+        <a href="#galleria"><span class="menu__num">04</span>Galleria</a>
+        <a href="#contatti"><span class="menu__num">05</span>Contatti</a>
+      </nav>
+      <div class="menu__foot">
+        <p class="label">Per prenotazioni e informazioni</p>
+        <div class="menu__actions">
+          <a class="btn btn--solid" href="tel:" data-phone-link>Chiama</a>
+          <a class="btn btn--line" href="mailto:" data-email-link>Scrivi un'email</a>
+        </div>
+        <p class="menu__place">Manoppello · Abruzzo</p>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- ============ 1. HERO — ARRIVAL ============ -->
+    <section class="hero" id="top" aria-label="Benvenuti a Villa Briccone">
+      <div class="hero__media">
+        <img class="hero__img"
+             src="assets/images/portico-sera.jpg"
+             srcset="assets/images/portico-sera-960.jpg 960w, assets/images/portico-sera.jpg 1920w"
+             sizes="100vw"
+             width="1920" height="1282"
+             alt="Il portico ad arcate di Villa Briccone illuminato al tramonto, con il prato e le lanterne del giardino"
+             fetchpriority="high" decoding="async">
+      </div>
+      <div class="hero__shade" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <p class="hero__eyebrow" data-hero-line>
+          <span>Villa Briccone</span><i></i><span>Ristorante</span><i></i><span>Ricevimenti</span>
+        </p>
+        <h1 class="hero__title">
+          <span class="line"><span data-hero-line>Dove ogni momento</span></span>
+          <span class="line"><span data-hero-line><em>diventa un ricordo.</em></span></span>
+        </h1>
+        <div class="hero__actions" data-hero-line>
+          <a class="btn btn--light" href="#villa">Scopri la villa</a>
+          <a class="btn btn--ghost-light" href="#contatti">Contattaci</a>
+        </div>
+      </div>
+
+      <div class="hero__foot" aria-hidden="true">
+        <span>Manoppello · Abruzzo</span>
+        <span class="hero__scroll"><i></i>Scorri</span>
+      </div>
+    </section>
+
+    <!-- ============ 2. INTRODUCTION ============ -->
+    <section class="intro section" aria-labelledby="intro-title">
+      <div class="container intro__grid">
+        <div class="intro__head">
+          <img class="intro__mark" src="assets/brand/logo-mark-taupe.png" width="211" height="199" alt="" data-reveal>
+          <p class="label" data-reveal>Manoppello · Abruzzo</p>
+          <h2 class="display display--xl" id="intro-title" data-reveal>
+            Un luogo<br><em>da vivere.</em>
+          </h2>
+        </div>
+        <div class="intro__body">
+          <p class="lead" data-reveal>
+            Una cena che si allunga fino a tardi. Una festa tra le persone più care.
+            Il giorno che si ricorderà per sempre.
+          </p>
+          <p data-reveal style="--d:.12s">
+            Villa Briccone è un ristorante e una location per ricevimenti ed eventi a Manoppello, in Abruzzo:
+            una villa con portici, giardini e piscina, dove ogni occasione trova lo spazio,
+            l'atmosfera e la cura che merita.
+          </p>
+          <a class="link-arrow" href="#villa" data-reveal style="--d:.2s">Entra nella villa</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 3. LA VILLA ============ -->
+    <section class="villa section" id="villa" aria-labelledby="villa-title">
+      <div class="container">
+        <header class="section-head section-head--split">
+          <div>
+            <p class="label label--rule" data-reveal>La Villa</p>
+            <h2 class="display display--lg" id="villa-title" data-reveal>
+              L'eleganza di una<br><em>casa italiana.</em>
+            </h2>
+          </div>
+          <p class="section-head__text" data-reveal style="--d:.15s">
+            Le arcate del portico, il colore caldo della facciata, i giardini curati
+            e le luci che si accendono al tramonto. Ogni angolo della villa accoglie
+            con discrezione e con calore.
+          </p>
+        </header>
+
+        <div class="villa__composition">
+          <figure class="villa__a">
+            <div class="frame frame--tall" data-media>
+              <img src="assets/images/portico-giorno-960.jpg"
+                   srcset="assets/images/portico-giorno-960.jpg 960w, assets/images/portico-giorno.jpg 2048w"
+                   sizes="(max-width: 760px) 100vw, 55vw"
+                   width="2048" height="1367" loading="lazy" decoding="async"
+                   alt="Il portico ad archi con salottini in vimini, il vialetto e il prato davanti all'ingresso della villa"
+                   data-parallax="0.08">
+            </div>
+            <figcaption class="caption" data-reveal><span>I.</span> Il portico</figcaption>
+          </figure>
+
+          <figure class="villa__b">
+            <div class="frame frame--landscape" data-media="up">
+              <img src="assets/images/facciata.jpg"
+                   width="960" height="639" loading="lazy" decoding="async"
+                   alt="La facciata color ocra di Villa Briccone con l'insegna, il prato e il cortile d'ingresso"
+                   data-parallax="0.05">
+            </div>
+            <figcaption class="caption" data-reveal><span>II.</span> L'ingresso</figcaption>
+          </figure>
+
+          <blockquote class="villa__quote" data-reveal>
+            <p>Arcate, giardini e luci calde: <em>la bellezza semplice di una villa italiana.</em></p>
+          </blockquote>
+
+          <figure class="villa__c">
+            <div class="frame frame--wide" data-media="wide">
+              <img src="assets/images/villa-notte-ingresso.jpg"
+                   srcset="assets/images/villa-notte-ingresso-960.jpg 960w, assets/images/villa-notte-ingresso.jpg 1280w"
+                   sizes="(max-width: 760px) 100vw, 80vw"
+                   width="1280" height="854" loading="lazy" decoding="async"
+                   alt="Veduta serale della villa illuminata, con il cortile, i giardini e l'insegna Villa Briccone in ferro battuto"
+                   data-parallax="0.06">
+            </div>
+            <figcaption class="caption" data-reveal><span>III.</span> Al calar della sera</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 4. GIARDINO — DAY TO NIGHT (sticky crossfade) ============ -->
+    <section class="daynight" id="giardino" aria-labelledby="daynight-title">
+      <div class="daynight__sticky">
+        <div class="daynight__layer daynight__layer--day">
+          <img src="assets/images/gazebo-giardino-960.jpg"
+               srcset="assets/images/gazebo-giardino-960.jpg 960w, assets/images/gazebo-giardino.jpg 1920w"
+               sizes="100vw" width="1920" height="1282" loading="lazy" decoding="async"
+               alt="Il gazebo in ferro battuto nel giardino, tra palme e siepi, alla luce del giorno">
+        </div>
+        <div class="daynight__layer daynight__layer--night">
+          <img src="assets/images/giardino-sera-960.jpg"
+               srcset="assets/images/giardino-sera-960.jpg 960w, assets/images/giardino-sera.jpg 1920w"
+               sizes="100vw" width="1920" height="1282" loading="lazy" decoding="async"
+               alt="Il giardino e il portico della villa alla sera, con le luci accese lungo il vialetto">
+        </div>
+        <div class="daynight__shade" aria-hidden="true"></div>
+
+        <div class="daynight__content">
+          <p class="label label--light daynight__phase" aria-hidden="true">
+            <span class="is-day">Il giardino · Giorno</span>
+            <span class="is-night">Il giardino · Sera</span>
+          </p>
+          <h2 class="display display--lg daynight__title" id="daynight-title">
+            <span class="daynight__l1">Dalla luce del giorno</span>
+            <span class="daynight__l2"><em>alla magia della sera.</em></span>
+          </h2>
+          <p class="daynight__text">
+            Prati curati, palme, sentieri e giochi d'acqua. Di giorno il giardino si apre alla luce;
+            al tramonto si accendono lanterne e lampioni, e tutto diventa più intimo.
+          </p>
+        </div>
+
+        <div class="daynight__progress" aria-hidden="true"><i></i></div>
+      </div>
+    </section>
+
+    <!-- Outdoor strip: pool & receptions -->
+    <section class="outdoor section" aria-label="La piscina e gli spazi all'aperto">
+      <div class="container outdoor__grid">
+        <figure class="outdoor__a">
+          <div class="frame frame--wide" data-media>
+            <img src="assets/images/piscina-ristorante-960.jpg"
+                 srcset="assets/images/piscina-ristorante-960.jpg 960w, assets/images/piscina-ristorante.jpg 2048w"
+                 sizes="(max-width: 760px) 100vw, 62vw"
+                 width="2048" height="1367" loading="lazy" decoding="async"
+                 alt="Tavoli apparecchiati a bordo piscina sotto gli ombrelloni, con le fontane e la villa sullo sfondo"
+                 data-parallax="0.07">
+          </div>
+        </figure>
+        <div class="outdoor__text">
+          <p class="label label--rule" data-reveal>La piscina</p>
+          <h3 class="display display--md" data-reveal>Acqua, luce<br><em>e convivialità.</em></h3>
+          <p data-reveal style="--d:.1s">
+            Le fontane della piscina, gli ombrelloni, i tavoli all'aperto:
+            uno scenario che accompagna l'aperitivo, la cena e la festa.
+          </p>
+        </div>
+        <figure class="outdoor__b">
+          <div class="frame frame--portraitish" data-media="up">
+            <img src="assets/images/piscina-fontane-pianoforte-960.jpg"
+                 srcset="assets/images/piscina-fontane-pianoforte-960.jpg 960w, assets/images/piscina-fontane-pianoforte.jpg 1920w"
+                 sizes="(max-width: 760px) 100vw, 34vw"
+                 width="1920" height="1282" loading="lazy" decoding="async"
+                 alt="Ospiti eleganti accanto alla piscina con le fontane e un pianoforte a coda sul tappeto rosso">
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ 5. RISTORANTE — TABLE ============ -->
+    <section class="ristorante section" id="ristorante" aria-labelledby="ristorante-title">
+      <div class="container">
+        <div class="ristorante__grid">
+          <div class="ristorante__text">
+            <p class="label label--rule" data-reveal>Il Ristorante</p>
+            <h2 class="display display--lg" id="ristorante-title" data-reveal>
+              A tavola,<br><em>come in un'occasione speciale.</em>
+            </h2>
+            <p class="lead" data-reveal style="--d:.1s">
+              Tovaglie bianche, candelabri, lampadari di cristallo.
+            </p>
+            <p data-reveal style="--d:.16s">
+              Sale luminose che accolgono con la stessa attenzione una cena a due
+              e un pranzo di festa. E quando il tempo lo permette, la tavola
+              si apparecchia anche all'aperto, accanto alla piscina.
+            </p>
+            <div class="ristorante__note" data-reveal style="--d:.22s">
+              <p>Per prenotare un tavolo, contattaci direttamente.</p>
+              <div class="btn-row">
+                <a class="btn btn--solid" href="tel:" data-phone-link>Chiama</a>
+                <a class="btn btn--line" href="mailto:" data-email-link>Scrivi un'email</a>
+              </div>
+            </div>
+          </div>
+
+          <figure class="ristorante__main">
+            <div class="frame frame--tall" data-media>
+              <img src="assets/images/sala-banchetti-960.jpg"
+                   srcset="assets/images/sala-banchetti-960.jpg 960w, assets/images/sala-banchetti.jpg 1920w"
+                   sizes="(max-width: 760px) 100vw, 50vw"
+                   width="1920" height="1282" loading="lazy" decoding="async"
+                   alt="La sala da pranzo con tavoli rotondi apparecchiati, candelabri d'argento e lampadari di cristallo"
+                   data-parallax="0.08">
+            </div>
+          </figure>
+        </div>
+
+        <div class="ristorante__details">
+          <figure class="ristorante__d1">
+            <div class="frame frame--landscape" data-media="up">
+              <img src="assets/images/sala-tavoli-960.jpg"
+                   srcset="assets/images/sala-tavoli-960.jpg 960w, assets/images/sala-tavoli.jpg 2048w"
+                   sizes="(max-width: 760px) 100vw, 45vw"
+                   width="2048" height="1367" loading="lazy" decoding="async"
+                   alt="Dettaglio di una tavola apparecchiata con calici, candele e sedie rivestite in tessuto trapuntato">
+            </div>
+            <figcaption class="caption" data-reveal><span>—</span> La sala</figcaption>
+          </figure>
+          <figure class="ristorante__d2">
+            <div class="frame frame--square" data-media="up">
+              <img src="assets/images/catering-crostacei.jpg"
+                   width="1000" height="800" loading="lazy" decoding="async"
+                   alt="Composizione di scampi e crostacei decorata con un fiore bianco">
+            </div>
+            <figcaption class="caption" data-reveal><span>—</span> I dettagli</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 6. MATRIMONI & EVENTI — CELEBRATION ============ -->
+    <section class="eventi" id="eventi" aria-labelledby="eventi-title">
+      <div class="eventi__hero">
+        <div class="eventi__hero-media" data-media="wide">
+          <img src="assets/images/cerimonia-giardino-960.jpg"
+               srcset="assets/images/cerimonia-giardino-960.jpg 960w, assets/images/cerimonia-giardino.jpg 1676w"
+               sizes="100vw" width="1676" height="1119" loading="lazy" decoding="async"
+               alt="Allestimento per una cerimonia in giardino: gazebo con tulle e fiori, sedie bianche e tappeto chiaro tra le palme"
+               data-parallax="0.1">
+        </div>
+        <div class="eventi__hero-shade" aria-hidden="true"></div>
+        <div class="container eventi__hero-content">
+          <p class="label label--light label--rule" data-reveal>Matrimoni &amp; Eventi</p>
+          <h2 class="display display--xl" id="eventi-title" data-reveal>
+            I momenti che meritano<br><em>di essere ricordati.</em>
+          </h2>
+        </div>
+      </div>
+
+      <div class="container eventi__body">
+        <div class="eventi__intro">
+          <p class="lead" data-reveal>
+            Il sì pronunciato in giardino. L'arrivo degli ospiti sul tappeto rosso.
+            Il brindisi a bordo piscina, la festa che continua sotto le luci della sera.
+          </p>
+          <p data-reveal style="--d:.1s">
+            Ogni occasione è diversa, e merita di essere raccontata.
+            Parlateci della vostra: la immagineremo insieme.
+          </p>
+          <a class="btn btn--wine" href="#contatti" data-reveal style="--d:.18s">Parliamone</a>
+        </div>
+
+        <!-- Occasion index: hovering/focusing a row crossfades the preview image (desktop) -->
+        <div class="occasions">
+          <div class="occasions__preview" aria-hidden="true">
+            <img class="is-active" data-occasion-img="0" src="assets/images/villa-notte-monogramma-720.jpg" alt="" loading="lazy" decoding="async">
+            <img data-occasion-img="1" src="assets/images/cerimonia-giardino-960.jpg" alt="" loading="lazy" decoding="async">
+            <img data-occasion-img="2" src="assets/images/piscina-fontane-pianoforte-960.jpg" alt="" loading="lazy" decoding="async">
+            <img data-occasion-img="3" src="assets/images/sala-banchetti-960.jpg" alt="" loading="lazy" decoding="async">
+            <img data-occasion-img="4" src="assets/images/villa-notte-ingresso-960.jpg" alt="" loading="lazy" decoding="async">
+          </div>
+
+          <ul class="occasions__list">
+            <li class="occasion is-active" data-occasion="0" tabindex="0">
+              <span class="occasion__num">01</span>
+              <h3 class="occasion__name">Matrimoni</h3>
+              <p class="occasion__text">Dal sì in giardino alla festa della sera.</p>
+            </li>
+            <li class="occasion" data-occasion="1" tabindex="0">
+              <span class="occasion__num">02</span>
+              <h3 class="occasion__name">Cerimonie</h3>
+              <p class="occasion__text">Gli appuntamenti importanti della vita, celebrati con eleganza.</p>
+            </li>
+            <li class="occasion" data-occasion="2" tabindex="0">
+              <span class="occasion__num">03</span>
+              <h3 class="occasion__name">Ricevimenti</h3>
+              <p class="occasion__text">Tra il giardino, la piscina e le sale della villa.</p>
+            </li>
+            <li class="occasion" data-occasion="3" tabindex="0">
+              <span class="occasion__num">04</span>
+              <h3 class="occasion__name">Feste private</h3>
+              <p class="occasion__text">Compleanni, anniversari, ricorrenze: le vostre persone, il vostro momento.</p>
+            </li>
+            <li class="occasion" data-occasion="4" tabindex="0">
+              <span class="occasion__num">05</span>
+              <h3 class="occasion__name">Eventi speciali</h3>
+              <p class="occasion__text">Ogni occasione che meriti un luogo all'altezza.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 7. THE PIANO ============ -->
+    <section class="piano section" aria-labelledby="piano-title">
+      <div class="container piano__grid">
+        <div class="piano__content">
+          <p class="label label--rule" data-reveal>Un dettaglio</p>
+          <h2 class="display display--lg" id="piano-title" data-reveal>
+            Ogni dettaglio<br><em>ha la sua musica.</em>
+          </h2>
+          <p data-reveal style="--d:.15s">Un tappeto rosso, le lanterne accese, un pianoforte in giardino.</p>
+        </div>
+        <figure class="piano__figure">
+          <div class="frame" data-media="wide">
+            <img src="assets/images/red-carpet-pianoforte.jpg"
+                 width="1090" height="955" loading="lazy" decoding="async"
+                 alt="Un tappeto rosso tra lanterne accese conduce a un pianoforte a coda nel giardino, al crepuscolo"
+                 data-parallax="0.1">
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ 8. GALLERIA — MEMORY ============ -->
+    <section class="galleria section" id="galleria" aria-labelledby="galleria-title">
+      <div class="container">
+        <header class="section-head section-head--center">
+          <p class="label" data-reveal>Galleria</p>
+          <h2 class="display display--lg" id="galleria-title" data-reveal>
+            Frammenti <em>di villa.</em>
+          </h2>
+        </header>
+
+        <!--
+          Editorial gallery. Each button opens the fullscreen viewer.
+          data-full = large image for the viewer; img src = lighter preview.
+          To add/replace images, copy a <button class="g-item"> block.
+        -->
+        <div class="g-grid">
+          <button class="g-item g-1" type="button" data-full="assets/images/portico-sera.jpg" data-caption="Il portico al tramonto">
+            <span class="frame" data-media><img src="assets/images/portico-sera-960.jpg" width="960" height="641" loading="lazy" decoding="async" alt="Il portico ad arcate illuminato al tramonto"></span>
+          </button>
+          <button class="g-item g-2" type="button" data-full="assets/images/villa-notte-monogramma.jpg" data-caption="La villa sotto le stelle">
+            <span class="frame" data-media="up"><img src="assets/images/villa-notte-monogramma-720.jpg" width="720" height="900" loading="lazy" decoding="async" alt="La villa di notte sotto un cielo stellato con il monogramma VB"></span>
+          </button>
+          <button class="g-item g-3" type="button" data-full="assets/images/sala-tavoli.jpg" data-caption="La sala, apparecchiata">
+            <span class="frame" data-media="up"><img src="assets/images/sala-tavoli-960.jpg" width="960" height="641" loading="lazy" decoding="async" alt="Tavola rotonda apparecchiata con calici e candele"></span>
+          </button>
+          <button class="g-item g-4" type="button" data-full="assets/images/piscina-fontane-pianoforte.jpg" data-caption="Ricevimento a bordo piscina">
+            <span class="frame" data-media><img src="assets/images/piscina-fontane-pianoforte-960.jpg" width="960" height="641" loading="lazy" decoding="async" alt="Ospiti accanto alla piscina con fontane e pianoforte a coda"></span>
+          </button>
+          <button class="g-item g-5" type="button" data-full="assets/images/catering-crostacei.jpg" data-caption="Un dettaglio a tavola">
+            <span class="frame" data-media="up"><img src="assets/images/catering-crostacei.jpg" width="1000" height="800" loading="lazy" decoding="async" alt="Scampi e crostacei decorati con un fiore bianco"></span>
+          </button>
+          <button class="g-item g-6" type="button" data-full="assets/images/cerimonia-giardino.jpg" data-caption="Cerimonia in giardino">
+            <span class="frame" data-media><img src="assets/images/cerimonia-giardino-960.jpg" width="960" height="641" loading="lazy" decoding="async" alt="Allestimento per una cerimonia nel giardino tra le palme"></span>
+          </button>
+          <button class="g-item g-7" type="button" data-full="assets/images/gazebo-giardino.jpg" data-caption="Il gazebo tra le palme">
+            <span class="frame" data-media="up"><img src="assets/images/gazebo-giardino-960.jpg" width="960" height="641" loading="lazy" decoding="async" alt="Gazebo in ferro battuto con palme illuminate"></span>
+          </button>
+          <button class="g-item g-8" type="button" data-full="assets/images/sala-banchetti.jpg" data-caption="Candelabri e cristalli">
+            <span class="frame" data-media><img src="assets/images/sala-banchetti-960.jpg" width="960" height="641" loading="lazy" decoding="async" alt="Sala da pranzo con candelabri e lampadari di cristallo"></span>
+          </button>
+          <button class="g-item g-9" type="button" data-full="assets/images/red-carpet-pianoforte.jpg" data-caption="L'arrivo degli ospiti">
+            <span class="frame" data-media="up"><img src="assets/images/red-carpet-pianoforte.jpg" width="1090" height="955" loading="lazy" decoding="async" alt="Tappeto rosso con lanterne verso il pianoforte in giardino"></span>
+          </button>
+          <button class="g-item g-10" type="button" data-full="assets/images/giardino-sera.jpg" data-caption="Il giardino alla sera">
+            <span class="frame" data-media><img src="assets/images/giardino-sera-960.jpg" width="960" height="641" loading="lazy" decoding="async" alt="Il giardino e il portico illuminati alla sera"></span>
+          </button>
+          <button class="g-item g-11" type="button" data-full="assets/images/piscina-ristorante.jpg" data-caption="Tavoli all'aperto">
+            <span class="frame" data-media="up"><img src="assets/images/piscina-ristorante-960.jpg" width="960" height="641" loading="lazy" decoding="async" alt="Tavoli apparecchiati a bordo piscina"></span>
+          </button>
+          <button class="g-item g-12" type="button" data-full="assets/images/portico-giorno.jpg" data-caption="L'ingresso, di giorno">
+            <span class="frame" data-media><img src="assets/images/portico-giorno-960.jpg" srcset="assets/images/portico-giorno-960.jpg 960w, assets/images/portico-giorno.jpg 2048w" sizes="(max-width: 760px) 100vw, 60vw" width="960" height="641" loading="lazy" decoding="async" alt="Il portico ad archi e il prato in una giornata di sole"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 9. CONTATTI — CONTACT ============ -->
+    <!--
+      PHONE / EMAIL: edit them once in script.js → CONFIG (top of the file).
+      Every element with data-phone / data-email / data-phone-link / data-email-link
+      is filled automatically. The [TELEFONO] / [EMAIL] text below is the fallback.
+    -->
+    <section class="contatti" id="contatti" aria-labelledby="contatti-title">
+      <div class="contatti__grid">
+        <div class="contatti__media" data-media>
+          <img src="assets/images/villa-notte-monogramma-720.jpg"
+               srcset="assets/images/villa-notte-monogramma-720.jpg 720w, assets/images/villa-notte-monogramma.jpg 1350w"
+               sizes="(max-width: 900px) 100vw, 45vw"
+               width="1350" height="1688" loading="lazy" decoding="async"
+               alt="La villa illuminata di notte sotto un cielo stellato"
+               data-parallax="0.06">
+        </div>
+
+        <div class="contatti__body">
+          <p class="label label--rule" data-reveal>Contatti</p>
+          <h2 class="display display--lg" id="contatti-title" data-reveal>
+            Il prossimo momento<br><em>potrebbe iniziare qui.</em>
+          </h2>
+          <p class="lead" data-reveal style="--d:.1s">
+            Per prenotazioni, eventi e informazioni, contatta direttamente Villa Briccone.
+          </p>
+
+          <dl class="contact-list" data-reveal style="--d:.16s">
+            <div>
+              <dt>Telefono</dt>
+              <dd><a href="tel:" data-phone-link data-phone>[TELEFONO]</a></dd>
+            </div>
+            <div>
+              <dt>Email</dt>
+              <dd><a href="mailto:" data-email-link data-email>[EMAIL]</a></dd>
+            </div>
+            <div>
+              <dt>Dove</dt>
+              <dd>
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=Villa+Briccone+Manoppello" target="_blank" rel="noopener">
+                  Manoppello, Abruzzo
+                </a>
+              </dd>
+            </div>
+          </dl>
+
+          <div class="btn-row" data-reveal style="--d:.22s">
+            <a class="btn btn--solid" href="tel:" data-phone-link>Chiama</a>
+            <a class="btn btn--line" href="mailto:" data-email-link>Scrivi un'email</a>
+            <a class="link-arrow" href="https://www.google.com/maps/search/?api=1&amp;query=Villa+Briccone+Manoppello" target="_blank" rel="noopener">Indicazioni</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <img class="footer__logo" src="assets/brand/logo-full-gold.png" width="516" height="374" alt="Villa Briccone — logo" loading="lazy" decoding="async">
+        <p class="footer__tag">Ristorante · Ricevimenti · Eventi</p>
+      </div>
+
+      <div class="footer__col">
+        <p class="label">Dove</p>
+        <p>Manoppello, Abruzzo</p>
+      </div>
+
+      <div class="footer__col">
+        <p class="label">Contatti</p>
+        <p><a href="tel:" data-phone-link data-phone>[TELEFONO]</a></p>
+        <p><a href="mailto:" data-email-link data-email>[EMAIL]</a></p>
+      </div>
+
+      <nav class="footer__col" aria-label="Navigazione nel footer">
+        <p class="label">Esplora</p>
+        <a href="#villa">La Villa</a>
+        <a href="#ristorante">Ristorante</a>
+        <a href="#eventi">Matrimoni &amp; Eventi</a>
+        <a href="#galleria">Galleria</a>
+        <a href="#contatti">Contatti</a>
+      </nav>
+
+      <!-- Social links: filled from script.js → CONFIG.social (hidden while empty) -->
+      <div class="footer__col footer__social" data-social hidden>
+        <p class="label">Seguici</p>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>© <span data-year></span> Villa Briccone</p>
+      <p>Per prenotazioni e informazioni, contattaci direttamente.</p>
+    </div>
+  </footer>
+
+  <!-- Mobile contact bar (appears after the hero) -->
+  <div class="callbar" aria-label="Contatti rapidi">
+    <a href="tel:" data-phone-link>Chiama</a>
+    <a href="mailto:" data-email-link>Email</a>
+  </div>
+
+  <!-- ============ LIGHTBOX ============ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Galleria fotografica" hidden>
+    <div class="lightbox__stage">
+      <img class="lightbox__img" alt="">
+    </div>
+    <p class="lightbox__meta"><span class="lightbox__count"></span><span class="lightbox__caption"></span></p>
+    <button class="lightbox__btn lightbox__close" type="button" aria-label="Chiudi">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg>
+    </button>
+    <button class="lightbox__btn lightbox__prev" type="button" aria-label="Foto precedente">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4l-8 8 8 8"/></svg>
+    </button>
+    <button class="lightbox__btn lightbox__next" type="button" aria-label="Foto successiva">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4l8 8-8 8"/></svg>
+    </button>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
